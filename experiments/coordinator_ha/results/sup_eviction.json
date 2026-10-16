@@ -1,0 +1,45 @@
+[
+ {
+  "experiment": "eviction",
+  "eviction_interval_s": 5.0,
+  "quota_objects": 8,
+  "control": {
+   "stored_objects": 20,
+   "actual_l2_objects": 9,
+   "coordinator_usage_objects": 11.0
+  },
+  "restart_to_healthz_s": 5.55,
+  "healthz_to_all_reregistered_s": 8.25,
+  "quota_after_restart": 8.0,
+  "crash": {
+   "l2_objects_before_crash": 9,
+   "stored_during_downtime": 20,
+   "samples_every_5s_after_recovery": [
+    {
+     "actual_l2_objects": 28,
+     "coordinator_usage_objects": 8.0
+    },
+    {
+     "actual_l2_objects": 27,
+     "coordinator_usage_objects": 7.0
+    },
+    {
+     "actual_l2_objects": 27,
+     "coordinator_usage_objects": 7.0
+    },
+    {
+     "actual_l2_objects": 27,
+     "coordinator_usage_objects": 7.0
+    },
+    {
+     "actual_l2_objects": 27,
+     "coordinator_usage_objects": 7.0
+    },
+    {
+     "actual_l2_objects": 27,
+     "coordinator_usage_objects": 7.0
+    }
+   ]
+  }
+ }
+]

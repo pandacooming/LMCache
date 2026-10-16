@@ -1,0 +1,64 @@
+[
+  {
+    "scenario": "no-persist",
+    "store_latency_normal_s": 0.009,
+    "before_crash": {
+      "instances": [
+        "mp-1",
+        "mp-2"
+      ],
+      "l1": {
+        "A": "2/2",
+        "B": "2/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "0/2"
+      },
+      "l2": {
+        "A": "2/2",
+        "B": "2/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "0/2"
+      },
+      "quotas": {
+        "alice": 1.0,
+        "bob": 2.0
+      },
+      "pinned_keys": 2
+    },
+    "E_seen_to_kill_s": 0.022,
+    "store_latency_while_down_s": 0.006,
+    "restart_to_healthz_s": 2.85,
+    "healthz_to_all_reregistered_s": 8.44,
+    "downtime_total_s": 19.29,
+    "after_recovery": {
+      "instances": [
+        "mp-1",
+        "mp-2"
+      ],
+      "l1": {
+        "A": "0/2",
+        "B": "0/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "2/2"
+      },
+      "l2": {
+        "A": "0/2",
+        "B": "0/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "2/2"
+      },
+      "quotas": {},
+      "pinned_keys": 0
+    },
+    "objects_actually_in_shared_l2": 10,
+    "coordinator_logged_event_gap": false,
+    "servers_logged_dropped_events": {
+      "mp-1": true,
+      "mp-2": false
+    }
+  }
+]

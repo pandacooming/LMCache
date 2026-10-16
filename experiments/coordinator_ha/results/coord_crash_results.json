@@ -1,0 +1,190 @@
+[
+  {
+    "scenario": "no-persist",
+    "store_latency_normal_s": 0.007,
+    "before_crash": {
+      "instances": [
+        "mp-1",
+        "mp-2"
+      ],
+      "l1": {
+        "A": "2/2",
+        "B": "2/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "0/2"
+      },
+      "l2": {
+        "A": "2/2",
+        "B": "2/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "0/2"
+      },
+      "quotas": {
+        "alice": 1.0,
+        "bob": 2.0
+      },
+      "pinned_keys": 2
+    },
+    "E_seen_to_kill_s": 0.02,
+    "store_latency_while_down_s": 0.005,
+    "restart_to_healthz_s": 3.22,
+    "healthz_to_all_reregistered_s": 9.15,
+    "downtime_total_s": 20.37,
+    "after_recovery": {
+      "instances": [
+        "mp-1",
+        "mp-2"
+      ],
+      "l1": {
+        "A": "0/2",
+        "B": "0/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "2/2"
+      },
+      "l2": {
+        "A": "0/2",
+        "B": "0/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "2/2"
+      },
+      "quotas": {},
+      "pinned_keys": 0
+    },
+    "coordinator_logged_event_gap": true,
+    "servers_logged_dropped_events": {
+      "mp-1": true,
+      "mp-2": false
+    }
+  },
+  {
+    "scenario": "persist",
+    "store_latency_normal_s": 0.007,
+    "before_crash": {
+      "instances": [
+        "mp-1",
+        "mp-2"
+      ],
+      "l1": {
+        "A": "2/2",
+        "B": "2/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "0/2"
+      },
+      "l2": {
+        "A": "2/2",
+        "B": "2/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "0/2"
+      },
+      "quotas": {
+        "alice": 1.0,
+        "bob": 2.0
+      },
+      "pinned_keys": 2
+    },
+    "E_seen_to_kill_s": 0.021,
+    "last_checkpoint_after_E_seen": false,
+    "store_latency_while_down_s": 0.006,
+    "restart_to_healthz_s": 2.86,
+    "healthz_to_all_reregistered_s": 7.61,
+    "downtime_total_s": 18.47,
+    "after_recovery": {
+      "instances": [
+        "mp-1",
+        "mp-2"
+      ],
+      "l1": {
+        "A": "2/2",
+        "B": "2/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "2/2"
+      },
+      "l2": {
+        "A": "2/2",
+        "B": "2/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "2/2"
+      },
+      "quotas": {
+        "alice": 1.0,
+        "bob": 2.0
+      },
+      "pinned_keys": 2
+    },
+    "coordinator_logged_event_gap": true,
+    "servers_logged_dropped_events": {
+      "mp-1": true,
+      "mp-2": false
+    }
+  },
+  {
+    "scenario": "node-loss",
+    "store_latency_normal_s": 0.006,
+    "before_crash": {
+      "instances": [
+        "mp-1",
+        "mp-2"
+      ],
+      "l1": {
+        "A": "2/2",
+        "B": "2/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "0/2"
+      },
+      "l2": {
+        "A": "2/2",
+        "B": "2/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "0/2"
+      },
+      "quotas": {
+        "alice": 1.0,
+        "bob": 2.0
+      },
+      "pinned_keys": 2
+    },
+    "E_seen_to_kill_s": 0.034,
+    "last_checkpoint_after_E_seen": false,
+    "store_latency_while_down_s": 0.005,
+    "restart_to_healthz_s": 3.2,
+    "healthz_to_all_reregistered_s": 10.34,
+    "downtime_total_s": 21.54,
+    "after_recovery": {
+      "instances": [
+        "mp-1",
+        "mp-2"
+      ],
+      "l1": {
+        "A": "0/2",
+        "B": "0/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "2/2"
+      },
+      "l2": {
+        "A": "0/2",
+        "B": "0/2",
+        "E": "0/2",
+        "C": "0/2",
+        "D": "2/2"
+      },
+      "quotas": {},
+      "pinned_keys": 0
+    },
+    "coordinator_logged_event_gap": true,
+    "servers_logged_dropped_events": {
+      "mp-1": true,
+      "mp-2": false
+    }
+  }
+]

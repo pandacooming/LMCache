@@ -1,0 +1,56 @@
+[
+ {
+  "experiment": "hang-40",
+  "hang_s": 40,
+  "store_latency_before": {
+   "n": 10,
+   "median_ms": 5.1,
+   "max_ms": 7.0
+  },
+  "store_latency_during_hang": {
+   "n": 40,
+   "median_ms": 4.8,
+   "max_ms": 7.3
+  },
+  "publish_failures_during_hang": 16,
+  "heartbeat_failures_during_hang": 2,
+  "instances_1s_after_resume": [],
+  "resume_to_all_listed_s": 5.24,
+  "coordinator_l2_keys": {
+   "before_hang": 24,
+   "stored_during_hang": 80,
+   "after_resume": 102,
+   "actually_in_l2": 104
+  },
+  "store_latency_after": {
+   "n": 10,
+   "median_ms": 5.5,
+   "max_ms": 7.5
+  },
+  "view_after": {
+   "instances": [
+    "mp-1",
+    "mp-2"
+   ],
+   "l1": {
+    "A": "0/2",
+    "B": "0/2",
+    "E": "0/2",
+    "C": "0/2",
+    "D": "0/2"
+   },
+   "l2": {
+    "A": "2/2",
+    "B": "2/2",
+    "E": "0/2",
+    "C": "0/2",
+    "D": "0/2"
+   },
+   "quotas": {
+    "alice": 1.0,
+    "bob": 2.0
+   },
+   "pinned_keys": 2
+  }
+ }
+]

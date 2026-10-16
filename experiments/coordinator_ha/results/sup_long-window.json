@@ -1,0 +1,55 @@
+[
+ {
+  "experiment": "long-window",
+  "restart_to_healthz_s": 3.14,
+  "healthz_to_all_reregistered_s": 7.36,
+  "view_at_+2s": {
+   "instances": [
+    "mp-1",
+    "mp-2"
+   ],
+   "l1": {
+    "A": "0/2",
+    "B": "0/2",
+    "E": "0/2",
+    "C": "0/2",
+    "D": "2/2"
+   },
+   "l2": {
+    "A": "0/2",
+    "B": "0/2",
+    "E": "0/2",
+    "C": "0/2",
+    "D": "2/2"
+   },
+   "quotas": {},
+   "pinned_keys": 0
+  },
+  "coordinator_l2_keys_at_+2s": 2,
+  "view_at_+120s": {
+   "instances": [
+    "mp-1",
+    "mp-2"
+   ],
+   "l1": {
+    "A": "0/2",
+    "B": "0/2",
+    "E": "0/2",
+    "C": "0/2",
+    "D": "2/2"
+   },
+   "l2": {
+    "A": "0/2",
+    "B": "0/2",
+    "E": "0/2",
+    "C": "0/2",
+    "D": "2/2"
+   },
+   "quotas": {},
+   "pinned_keys": 0
+  },
+  "coordinator_l2_keys_at_+120s": 2,
+  "l2_keys_listed_by_mp_server": 10,
+  "l2_files_on_disk": 10
+ }
+]

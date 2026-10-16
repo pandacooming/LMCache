@@ -1,0 +1,35 @@
+[
+ {
+  "experiment": "sigterm",
+  "sigterm_shutdown_s": 0.17,
+  "exit_code": -15,
+  "checkpoint_written_after_E": true,
+  "restart_to_healthz_s": 5.46,
+  "healthz_to_all_reregistered_s": 6.96,
+  "after_recovery": {
+   "instances": [
+    "mp-1",
+    "mp-2"
+   ],
+   "l1": {
+    "A": "2/2",
+    "B": "2/2",
+    "E": "2/2",
+    "C": "0/2",
+    "D": "2/2"
+   },
+   "l2": {
+    "A": "2/2",
+    "B": "2/2",
+    "E": "2/2",
+    "C": "0/2",
+    "D": "2/2"
+   },
+   "quotas": {
+    "alice": 1.0,
+    "bob": 2.0
+   },
+   "pinned_keys": 2
+  }
+ }
+]
